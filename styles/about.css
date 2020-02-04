@@ -1,0 +1,25 @@
+:root {
+  --title-color: #111111;
+}
+
+main h1 {
+  font-size: 24px;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+main h4 {
+  font-size: 20px;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 18px;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 40px;
+}
