@@ -1,0 +1,73 @@
+:root {
+  --title-color: #111111;
+}
+
+#imgRecipe {
+  width: 940px;
+  height: 280px;
+  border-radius: 15px;
+}
+
+#description {
+  text-align: center;
+  margin: 5% auto;
+}
+
+#description h1 {
+  color: var(--title-color);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#description h5 {
+  color: #777777;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* === CONTAINER === */
+
+.inline {
+  display: inline;
+  padding-right: 1%;
+}
+
+.container h3 {
+  color: var(--title-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button {
+  color: #999999;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.containerContent ul {
+  margin: 2%;
+  color: #444444;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.containerContent p {
+  margin: 2% auto;
+  color: #444444;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.containerContent {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === CONTAINER CONTENT HIDDEN */
+
+.containerContent.hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 40px;
+}

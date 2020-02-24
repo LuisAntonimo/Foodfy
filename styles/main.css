@@ -11,19 +11,10 @@
   --title-color: #111111;
 }
 
-html {
-  overflow: scroll;
-  overflow-x: hidden;
-}
-::-webkit-scrollbar {
-  width: 0px; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
-
 body {
   width: 940px;
   margin: 0 auto;
-  background-color: #eeeeee;
+  background-color: white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -54,8 +45,15 @@ header img {
 /* === FOOTER === */
 
 footer {
-  margin: 20px auto;
+  position: absolute;
+  left: 0;
+  /* top: 220%; */
+  width: 100%;
+  margin-top: 2%;
+  padding: 2% 0;
   text-align: center;
   color: #999999;
   font-size: 14px;
+  background-color: #eeeeee;
+  z-index: 1;
 }

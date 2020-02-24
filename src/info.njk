@@ -1,0 +1,77 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+
+  <title>{{recipe.title}}</title>
+
+  <link rel="stylesheet" href="/info.css">
+
+{% endblock head %}
+
+{% block content %}
+
+  <img src="{{recipe.image}}" alt="{{recipe.title}}" id="imgRecipe">
+
+  <section id="description">
+    <h1>{{recipe.title}}</h1>
+    <h5>
+      por
+      {{recipe.author}}
+    </h5>
+
+  </section>
+
+  <section id="recipe">
+
+    <div class="container">
+
+      <h3 class="inline">Igredientes</h3>
+      <h5 class="inline button">ESCONDER</h5>
+
+      <div class="containerContent">
+        <ul>
+          {% for ingredient in recipe.ingredients %}
+            <li>{{ingredient}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <h3 class="inline">Modo de prearo</h3>
+      <h5 class="inline button">ESCONDER</h5>
+
+      <div class="containerContent">
+        <ul>
+          {% for prepare in recipe.preparation %}
+            <li>{{prepare}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+    {% if recipe.information != '' %}
+
+      <div class="container">
+
+        <h3 class="inline">Informações Adicionais</h3>
+        <h5 class="inline button">ESCONDER</h5>
+
+        <div class="containerContent">
+          {% for information in recipe.information %}
+            <p>{{information}}</p>
+          {% endfor %}
+        </div>
+
+      </div>
+
+    {% endif %}
+
+    <script src="/hideButton.js"></script>
+
+  </section>
+
+{% endblock content %}

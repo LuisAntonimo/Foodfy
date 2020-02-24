@@ -1,0 +1,25 @@
+{
+  "name": "foodfy",
+  "version": "2.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "nunjucks": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisAntonimo/Foodfy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisAntonimo/Foodfy/issues"
+  },
+  "homepage": "https://github.com/LuisAntonimo/Foodfy#readme"
+}
